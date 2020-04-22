@@ -26,6 +26,8 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -47,26 +49,76 @@
   <body>
     <header>
       <div class="logo">
-        <a href="index.html">
+        <a href="index.html#home">
           <img src="img/signature.png" alt="signature for josemariodev" />
         </a>
       </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+
+          <a
+            href="mailto:josemariodev@gmail.com"
+            class="nav-link"
+            style="text-transform: lowercase;"
+            >josemariodev@gmail.com</a
+          >
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                target="_blank"
+                href="https://linkedin.com/in/josemariodev"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                target="_blank"
+                href="https://twitter.com/josemariodev"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                target="_blank"
+                href="https://github.com/josemariodev"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html#home" class="nav-link">
+              Home
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="index.html#services" class="nav__link">My Services</a>
+          <li class="nav-item">
+            <a href="index.html#services" class="nav-link">
+              My Services
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="index.html#about" class="nav__link">About me</a>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">
+              About Me
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="index.html#work" class="nav__link">My Work</a>
+          <li class="nav-item">
+            <a href="index.html#work" class="nav-link">
+              Portfolio
+            </a>
           </li>
         </ul>
       </nav>

@@ -1,12 +1,25 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
+const navLinks = document.querySelectorAll('.nav-link')
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+const navItems = document.querySelectorAll('.nav-item');
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('close');
+    menu.classList.toggle('show');
+    menuNav.classList.toggle('show');
+    menuBranding.classList.toggle('show');
+    navItems.forEach(item => item.classList.toggle('show'));
 });
 
 navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
+    link.addEventListener('click', () => {        
+        menuBtn.classList.toggle('close');
+        menu.classList.toggle('show');
+        menuNav.classList.toggle('show');
+        menuBranding.classList.toggle('show');
+        navItems.forEach(item => item.classList.toggle('show'));
+
     })
 })

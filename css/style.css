@@ -74,10 +74,10 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-:focus {
+/* :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
-}
+} */
 
 /* Buttons */
 
@@ -289,7 +289,7 @@ header {
     grid-area: img;
     min-width: 250px;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   .section__subtitle--intro {
@@ -367,10 +367,14 @@ header {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
-    grid-template-areas:
+    /* grid-template-areas:
       'title img'
       'subtitle img'
-      'text img';
+      'text img'; */
+    grid-template-areas:
+      'title title '
+      'subtitle subtitle'
+      'text text ';
     grid-column-gap: 2em;
   }
 
@@ -391,7 +395,7 @@ header {
   .about-me__img {
     grid-area: img;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
   }
 }
 
@@ -420,8 +424,6 @@ header {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 .portfolio__item:focus {
   position: relative;
@@ -463,6 +465,7 @@ header {
 
 .footer__link {
   font-weight: var(--fw-bold);
+  text-decoration: none;
 }
 
 .footer__link:hover,
@@ -487,6 +490,7 @@ header {
 }
 
 .social-list__link {
+  font-size: var(--fs-h3);
   padding: 0.5em;
 }
 

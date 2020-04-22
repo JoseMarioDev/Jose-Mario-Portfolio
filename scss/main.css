@@ -1,0 +1,306 @@
+.menu-btn {
+  position: absolute;
+  z-index: 99;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: var(--clr-accent);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-branding, .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #040404;
+  list-style: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-branding {
+  background: #111;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-branding .portrait {
+  width: 250px;
+  height: 330px;
+  background: url("../img/selfie-08.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-branding .social-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.menu-branding .footer__link {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.menu-branding .footer__link:hover,
+.menu-branding .social-list__link:hover {
+  opacity: 0.7;
+}
+
+.menu-branding .footer__link:hover {
+  text-decoration: underline;
+}
+
+.menu-branding .social-list__item {
+  margin: 0 0.5em;
+}
+
+.menu-branding .social-list__link {
+  padding: 0.5em;
+  font-size: var(--fs-h3);
+  color: var(--clr-light);
+}
+
+.menu-branding .social-list__link:hover {
+  color: var(--clr-accent);
+}
+
+.menu .nav__item {
+  -webkit-transform: translate3d(600px, 0, 0);
+          transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav__item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu .nav__item.current > a {
+  color: #00aeef;
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu .nav-link:hover {
+  color: #00aeef;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 25vh;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    display: none;
+    background: url("../img/selfie-08.jpg");
+    background-position: contain;
+    width: 150px;
+    height: 150px;
+  }
+  .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+  }
+  main #home h1 {
+    margin-top: 10vh;
+  }
+  main .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+  .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */
