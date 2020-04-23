@@ -119,6 +119,7 @@ h3 {
 }
 
 .section__title {
+  margin-top: 1rem;
   margin-bottom: 0.25em;
 }
 
@@ -158,7 +159,7 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 75px;
 }
 
 .nav {
@@ -262,6 +263,7 @@ header {
 /*  Intro section  */
 
 .intro {
+  /* margin-top: 1rem; */
   position: relative;
 }
 
@@ -286,13 +288,19 @@ header {
   }
 
   .intro__img {
+    /* margin-top: 1rem; */
     grid-area: img;
     min-width: 250px;
     position: relative;
     /* z-index: 2; */
   }
 
+  .section__title--intro {
+    /* margin-top: 1rem; */
+  }
+
   .section__subtitle--intro {
+    /* margin-top: 1rem; */
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
@@ -336,11 +344,40 @@ header {
 }
 
 .service {
+  /* outline: 1px solid blue; */
   max-width: 500px;
   margin: 0 auto;
 }
 
+.service-icons {
+  /* outline: 1px solid green; */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-icons li i {
+  /* outline: 1px solid orange; */
+}
+
+.service-icons li p {
+  margin: 0;
+  /* outline: 1px solid yellow; */
+}
+
+.service-icons li {
+  margin-right: 1rem;
+  /* outline: 1px solid red; */
+}
+.service-icons li:last-of-type {
+  margin: 0;
+  /* outline: 1px solid red; */
+}
+
 @media (min-width: 800px) {
+  .logo {
+    max-width: 6rem;
+  }
   .services {
     display: flex;
     max-width: 1000px;
