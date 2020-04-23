@@ -347,6 +347,7 @@ header {
   /* outline: 1px solid blue; */
   max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .service-icons {
@@ -383,6 +384,9 @@ header {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .service {
+    margin-bottom: none;
   }
 
   .service + .service {
