@@ -90,12 +90,13 @@
 
     .portrait {
       width: 250px;
-      height: 330px;
-      background: url('../img/selfie-08.jpg');
+      height: 334px;
+      background: url('../img/selfie-10.jpg');
+
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      // border-radius: 0.2rem;
+      border-radius: 5px;
       // border: solid 3px $secondary-color;
     }
     .social-list {
