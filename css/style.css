@@ -156,10 +156,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  position: relative;
 }
 
 .logo {
   max-width: 75px;
+  display: inline-block;
 }
 
 .nav {
