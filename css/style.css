@@ -62,7 +62,12 @@ ul {
 }
 
 section {
-  padding: 0 2em 5em 2em;
+  padding: 5em 2em;
+  /* padding: 1em 2em 5em 2em; */
+}
+
+#home {
+  padding: 0em 2em 5em 2em;
 }
 
 img {
