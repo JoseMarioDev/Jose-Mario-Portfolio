@@ -31,7 +31,7 @@
     left: 0;
     padding: 1em;
     background: var(--clr-accent);
-    opacity: 0.75;
+    opacity: 0.9;
     color: var(--clr-light);
     text-align: left;
     display: flex;
@@ -52,7 +52,7 @@
 }
 
 .portfolio-desc {
-  display: none;
+  // display: none;
 }
 
 .portfolio-link {
@@ -79,7 +79,8 @@
   bottom: 2em;
   left: 2em;
   right: 2em;
-  background: white;
+  background: var(--clr-light);
+  color: var(--clr-dark);
   box-shadow: 0 0 0 3em rgba(black, 0.5);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -113,18 +114,18 @@
   background-position: center;
 }
 
-.header-one {
-  background-image: url(/img/projects/revitalize/revitalize-homepage.jpg);
-}
+// .header-one {
+//   background-image: url(/img/projects/revitalize/revitalize-homepage.jpg);
+// }
 
-.header-two {
-  background-image: url(/img/projects/revitalize/revitalize-homepage.jpg);
-}
+// .header-two {
+//   background-image: url(/img/projects/revitalize/revitalize-homepage.jpg);
+// }
 
 .portfolio-title-box {
   background: rgba(var(--clr-accent), 0.75);
   padding: 3em 0 3em 3em;
-  color: white;
+  color: black;
   width: 70%;
 
   .portfolio-title {
