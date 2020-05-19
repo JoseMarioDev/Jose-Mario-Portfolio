@@ -1,6 +1,6 @@
 .menu-btn {
   position: fixed;
-  z-index: 99;
+  z-index: 80;
   right: 1em;
   top: 1em;
   cursor: pointer;
@@ -282,7 +282,7 @@
 
 .portfolio-modal {
   position: fixed;
-  z-index: 10;
+  z-index: 90;
   top: 2em;
   bottom: 2em;
   left: 2em;

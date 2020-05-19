@@ -15,11 +15,15 @@ portfolioContainer.addEventListener('click', e => {
     modal.classList.add('is-open')
     modal.style.animation = 'modalIn 500ms forwards'
     //document.body.style.overflowY = 'hidden'
+    document.documentElement.style.overflow = 'hidden';
+   document.body.scroll = "no";
   }
 
   const modalClose = _ => {
     modal.classList.remove('is-open')
     modal.removeEventListener('animationend', modalClose)
+    document.documentElement.style.overflow = 'scroll';
+ document.body.scroll = "yes"
   }
 
   closeButton.addEventListener('click', _ => {
