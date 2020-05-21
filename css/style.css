@@ -404,23 +404,20 @@ header {
   margin: 0 auto;
 }
 
-.about-me__link {
+.styled__link {
   text-decoration: none;
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
 }
 
-.about-me__link:hover {
+.styled__link:hover {
   text-decoration: underline;
 }
 
-.about-me__link:hover {
+.styled__link:hover {
   opacity: 0.7;
 }
 
-/* .about-me__img {
-  box-shadow: var(--bs);
-} */
 @media (min-width: 600px) {
   .about-me {
     display: grid;
