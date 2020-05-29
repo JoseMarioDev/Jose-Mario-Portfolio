@@ -272,7 +272,13 @@ header {
 
 .intro {
   /* margin-top: 1rem; */
+  /* outline: 1px solid red; */
   position: relative;
+  padding-bottom: 2rem;
+}
+.modal-links {
+  /* outline: 1px solid blue; */
+  padding: 0rem 0 5rem 0;
 }
 
 .intro__img {
@@ -293,6 +299,16 @@ header {
       'img title'
       'img subtitle';
     grid-template-columns: min-content max-content;
+    padding-bottom: 0;
+  }
+
+  .modal-links {
+    margin: 0 auto;
+    max-width: 622px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
 
   .intro__img {
@@ -456,6 +472,10 @@ header {
 }
 
 /* Individual portfolio item styles */
+
+.modal-links i {
+  margin-right: 0.4rem;
+}
 
 .portfolio-item__subheader {
   font-size: var(--fs-h3);
