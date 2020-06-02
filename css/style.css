@@ -64,7 +64,6 @@ ul {
 
 section {
   padding: 5em 2em;
-  /* padding: 1em 2em 5em 2em; */
 }
 
 #home {
@@ -79,11 +78,6 @@ img {
 strong {
   font-weight: var(--fw-bold);
 }
-
-/* :focus {
-  outline: 3px solid var(--clr-accent);
-  outline-offset: 3px;
-} */
 
 /* Buttons */
 
@@ -271,13 +265,10 @@ header {
 /*  Intro section  */
 
 .intro {
-  /* margin-top: 1rem; */
-  /* outline: 1px solid red; */
   position: relative;
   padding-bottom: 2rem;
 }
 .modal-links {
-  /* outline: 1px solid blue; */
   padding: 0rem 0 5rem 0;
 }
 
