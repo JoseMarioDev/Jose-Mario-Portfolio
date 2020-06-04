@@ -44,7 +44,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  // opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -97,7 +96,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 5px;
-      // border: solid 3px $secondary-color;
+      
     }
     .social-list {
       list-style: none;
