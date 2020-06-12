@@ -10,18 +10,11 @@
   --ff-primary: 'Alegreya Sans', sans-serif;
   --ff-secondary: 'Alegreya Sans', sans-serif;
 
-  /* --ff-primary: 'Source Sans Pro', sans-serif; */
-  /* --ff-secondary: 'Source Code Pro', monospace; */
-
   --fw-reg: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
-
-  /* --clr-accent: #16e0bd; */
-
-  /* --clr-accent: #4a8db5; */
   --clr-accent: #00aeef;
 
   --fs-h1: 3rem;
@@ -419,11 +412,7 @@ header {
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    /* grid-template-areas:
-      'title img'
-      'subtitle img'
-      'text img'; */
+    grid-template-columns: 1fr 300px;    
     grid-template-areas:
       'title img  '
       'subtitle  img'
