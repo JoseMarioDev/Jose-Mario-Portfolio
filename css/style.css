@@ -319,7 +319,7 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../img/services-bg.jpg);
+  background-image: url(../assets/services-bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
     url('../img/services-bg.jpg');
   background-size: cover;
@@ -412,7 +412,7 @@ header {
 @media (min-width: 600px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 300px;    
+    grid-template-columns: 1fr 300px;
     grid-template-areas:
       'title img  '
       'subtitle  img'
