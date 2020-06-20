@@ -321,7 +321,7 @@ header {
   background-color: var(--clr-dark);
   background-image: url(../assets/services-bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
-    url('../img/services-bg.jpg');
+    url('../assets/services-bg.jpg');
   background-size: cover;
 
   color: var(--clr-light);
